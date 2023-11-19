@@ -1,0 +1,14 @@
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+alias tmux='tmux -u'
+alias v="nvim"
+alias py="python3"
+alias ..="cd .."
+alias ze="nvim ~/.zshrc"
+alias zs="source ~/.zshrc"
+alias hx="~/AppImages/helix-23.10-x86_64.AppImage"
+
+#rust stuff
+alias cr="cargo run"
+alias crb="cargo run --bin"
