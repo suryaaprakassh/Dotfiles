@@ -1,13 +1,14 @@
 alias ll='ls -l'
-alias la='ls -A'
+alias la='ls -la'
 alias l='ls -CF'
 alias tmux='tmux -u'
 alias v="nvim"
 alias py="python3"
 alias ..="cd .."
-alias ze="nvim ~/.zshrc"
-alias zs="source ~/.zshrc"
+alias ze="nvim $HOME/.zshrc"
+alias zs="source $HOME/.zshrc"
 alias hx="~/AppImages/helix-23.10-x86_64.AppImage"
+alias c="code"
 
 #rust stuff
 alias cr="cargo run"
