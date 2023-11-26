@@ -39,7 +39,6 @@ fi
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
-
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
@@ -98,6 +97,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# if [ -f ~/.shell_aliases]; then
+#     . ~/.shell_aliases
+# fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -122,6 +124,8 @@ bind -x '"\C-f": bash ~/scripts/tmux-session.sh'
 set -o vi
 
 bind '"jj":vi-movement-mode'
+
+source ~/.shell_aliases
 
 export DISPLAY=:0
 # export PATH=$PATH:/home/suryaprakash/.local/kitty.app/bin
