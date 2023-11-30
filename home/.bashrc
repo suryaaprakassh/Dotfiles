@@ -112,7 +112,7 @@ if ! shopt -oq posix; then
 fi
 
 #autojump
-. /usr/share/autojump/autojump.sh
+#. /usr/share/autojump/autojump.sh
 
 #starship
 eval "$(starship init bash)"
@@ -128,7 +128,7 @@ bind '"jj":vi-movement-mode'
 source ~/.shell_aliases
 
 export DISPLAY=:0
-# export PATH=$PATH:/home/suryaprakash/.local/kitty.app/bin
+#export PATH=$PATH:/home/suryaprakash/.local/kitty.app/bin/
 export JAVA_HOME=" /usr/lib/jvm/java-17-openjdk-amd64 "
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

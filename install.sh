@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 sudo apt update
 sudo apt upgrade -y
 sudo apt install build-essential git stow tmux python3 unzip python3-pip gettext python3-venv curl autojump zsh -y
@@ -42,4 +40,3 @@ cd ~/Dotfiles
 stow conf
 stow home
 cp -r ~/Dotfiles/nvim ~/.config/
->>>>>>> Stashed changes

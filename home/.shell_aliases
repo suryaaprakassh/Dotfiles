@@ -9,7 +9,13 @@ alias ze="nvim $HOME/.zshrc"
 alias zs="source $HOME/.zshrc"
 alias hx="~/AppImages/helix-23.10-x86_64.AppImage"
 alias c="code"
+alias pd="pnpm run dev"
+alias yd="yarn run dev"
 
 #rust stuff
 alias cr="cargo run"
 alias crb="cargo run --bin"
+
+
+#danger
+alias sn="shutdown now"

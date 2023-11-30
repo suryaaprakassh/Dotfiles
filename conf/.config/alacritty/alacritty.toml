@@ -1,0 +1,9 @@
+[shell]
+program="/usr/bin/zsh"
+[font]
+size=10.0
+[font.normal]
+family="JetbrainsMono Nerd Font"
+
+[window]
+opacity=0.5
