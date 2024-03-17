@@ -1,21 +1,26 @@
 alias ll='ls -l'
 alias la='ls -la'
 alias l='ls -CF'
-alias tmux='tmux -u'
+alias tx='tmux -u'
+alias txn='tmux -u new -s'
 alias v="nvim"
 alias py="python3"
 alias ..="cd .."
 alias ze="nvim $HOME/.zshrc"
 alias zs="source $HOME/.zshrc"
-alias hx="~/AppImages/helix-23.10-x86_64.AppImage"
+alias hx="helix"
 alias c="code"
 alias pd="pnpm run dev"
 alias yd="yarn run dev"
+alias lg="lazygit"
 
 #rust stuff
 alias cr="cargo run"
 alias crb="cargo run --bin"
 
-
 #danger
 alias sn="shutdown now"
+
+
+#keybinds
+bindkey -s ^f "tmux-sessionizer\n"

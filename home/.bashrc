@@ -128,10 +128,11 @@ bind '"jj":vi-movement-mode'
 source ~/.shell_aliases
 
 export DISPLAY=:0
-#export PATH=$PATH:/home/suryaprakash/.local/kitty.app/bin/
 export JAVA_HOME=" /usr/lib/jvm/java-17-openjdk-amd64 "
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export TERM=xterm-256color
 . "$HOME/.cargo/env"
+#golang
+exportPATH=$PATH:/usr/local/go/bin

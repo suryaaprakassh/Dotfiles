@@ -9,8 +9,7 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
-plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -52,10 +51,7 @@ source $HOME/.shell_aliases
 
 #startship
 eval "$(starship init zsh)"
-export PATH=$PATH:/home/suryaprakash/.local/kitty.app/bin
 export JAVA_HOME=" /usr/lib/jvm/java-17-openjdk-amd64 "
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 export TERM=xterm-256color
 . "$HOME/.cargo/env"
 
@@ -67,3 +63,26 @@ export TERM=xterm-256color
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+
+# pnpm
+export PNPM_HOME="/home/suryaprakash/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+#golang
+export PATH=$PATH:/usr/local/go/bin
+
+#zoxide
+eval "$(zoxide init zsh)"
+
+
+#custom scripts
+export PATH=$PATH:$HOME/Scripts/
