@@ -25,6 +25,9 @@ font pango: JetBrainsMono Nerd Font 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+#i3
+exec --no-startup-id /usr/lib/gsd-xsettings
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -39,7 +42,9 @@ exec --no-startup-id blueman-applet &
 #compositor
 exec_always --no-startup-id picom 
 # wallpaper
-exec --no-startup-id /usr/bin/feh --bg-scale /home/suryaprakash/Downloads/wallpaper_luffy.jpg
+
+
+exec --no-startup-id /usr/bin/feh --bg-scale /home/suryaprakash/Downloads/soker.jpg
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status

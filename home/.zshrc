@@ -11,6 +11,9 @@ export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
+#theme
+ZSH_THEME="robbyrussell"
+
 source $ZSH/oh-my-zsh.sh
 
 bindkey -v
@@ -49,7 +52,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 source $HOME/.shell_aliases
 
 
-#startship
+#starship
 eval "$(starship init zsh)"
 export JAVA_HOME=" /usr/lib/jvm/java-17-openjdk-amd64 "
 export TERM=xterm-256color
@@ -79,6 +82,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #golang
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 #zoxide
 eval "$(zoxide init zsh)"
@@ -86,3 +90,7 @@ eval "$(zoxide init zsh)"
 
 #custom scripts
 export PATH=$PATH:$HOME/Scripts/
+
+#conda shit
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
