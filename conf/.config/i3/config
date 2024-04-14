@@ -81,7 +81,7 @@ bindsym $sup+p exec dunstctl history-pop
 bindsym $sup+space exec --no-startup-id ~/.config/rofi/launchers/type-2/launcher.sh
 
 #lockscreen
-bindsym $sup+l exec i3lock -i /home/suryaprakash/Downloads/soker.jpg
+bindsym $sup+l exec i3lock -i ~/Downloads/soker_blur.png
 
 
 # kill focused window
