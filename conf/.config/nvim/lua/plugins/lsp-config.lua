@@ -78,5 +78,7 @@ return {
 			vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, {})
 			vim.keymap.set("n", "<space>fd", vim.diagnostic.open_float, {})
-		end, },
+			vim.keymap.set("n", "<space>fq", vim.diagnostic.setloclist, {})
+		end,
+	},
 }

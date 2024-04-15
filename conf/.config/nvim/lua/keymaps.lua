@@ -7,11 +7,13 @@ vim.keymap.set("n", "<leader>d", '"_d', {})
 vim.keymap.set("v", "<leader>y", '"+y', {})
 vim.keymap.set("v", "<leader>d", '"_d', {})
 
---move lines
+
+--select paste remap
+vim.keymap.set("x", "p", '"_dP', {})
+
+--move lines 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {})
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {})
-
-vim.keymap.set("x", "<leader>p", '[[" _dP]]', {})
 
 --insert maps
 vim.keymap.set("i", "jj", "<Esc>", {})
@@ -26,7 +28,6 @@ vim.keymap.set("n", "<Esc>", ":nohl<CR>", {})
 
 --other remaps
 vim.keymap.set("n", "<C-f>", ":silent !tmux neww tmux-sessionizer<CR>", {})
-
 
 --splits
 vim.keymap.set("n", "<leader>sv", "<C-w>v", {})

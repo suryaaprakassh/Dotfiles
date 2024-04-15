@@ -13,8 +13,7 @@ vim.api.nvim_set_keymap('n', '<leader>fa', '<cmd>Telescope find_files find_comma
     },
     {
 'nvim-telescope/telescope-ui-select.nvim',
-      config=function()
-        require("telescope").setup {
+      config=function() require("telescope").setup {
           extensions = {
             ["ui-select"] = {
               require("telescope.themes").get_dropdown {
