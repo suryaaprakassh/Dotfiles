@@ -22,7 +22,6 @@ vim.keymap.set("i", "<C-h>", "<Right>", {})
 vim.keymap.set("i", "<C-k>", "<Up>", {})
 vim.keymap.set("i", "<C-j>", "<Down>", {})
 
-
 --normal maps
 vim.keymap.set("n", "<Esc>", ":nohl<CR>", {})
 
