@@ -61,11 +61,11 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #exec xinput set-prop "MSFT0001:00 0488:1014 Touchpad" "libinput Tapping Enabled" 1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+#floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+#tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $sup+Return exec wezterm 
