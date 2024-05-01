@@ -32,3 +32,9 @@ vim.keymap.set("n", "<C-f>", ":silent !tmux neww tmux-sessionizer<CR>", {})
 vim.keymap.set("n", "<leader>sv", "<C-w>v", {})
 vim.keymap.set("n", "<leader>sh", "<C-w>s", {})
 vim.keymap.set("n", "<leader>sq", "<C-w>q", {})
+
+--tabs
+vim.keymap.set("n", "<Tab>", ":tabnext<CR>", {})
+vim.keymap.set("n", "<S-Tab>", ":tabprev<CR>", {})
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", {})
+vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", {})

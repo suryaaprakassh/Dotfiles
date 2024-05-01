@@ -94,3 +94,5 @@ export PATH=$PATH:$HOME/Scripts/
 #conda shit
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
+#fzf integration?
+eval "$(fzf --zsh)"
