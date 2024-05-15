@@ -118,12 +118,12 @@ fi
 eval "$(starship init bash)"
 
 #tmux session
-bind -x '"\C-f": bash ~/scripts/tmux-session.sh'
+#bind -x '"\C-f": bash ~/scripts/tmux-session.sh'
 
 #setting global vim mode
 set -o vi
 
-bind '"jj":vi-movement-mode'
+#bind '"jj":vi-movement-mode'
 
 source ~/.shell_aliases
 

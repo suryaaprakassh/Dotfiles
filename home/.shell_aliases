@@ -24,4 +24,4 @@ alias sn="shutdown now"
 
 
 #keybinds
-bindkey -s ^f "tmux-sessionizer\n"
+#bindkey -s ^f "tmux-sessionizer\n"
