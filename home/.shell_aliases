@@ -22,6 +22,5 @@ alias crb="cargo run --bin"
 #danger
 alias sn="shutdown now"
 
-
 #keybinds
 #bindkey -s ^f "tmux-sessionizer\n"

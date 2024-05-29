@@ -26,7 +26,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 #bindkey '^f' bash ~/scripts/tmux-session.sh
-bindkey -s '^f' '$HOME/scripts/tmux-session.sh\n'
+bindkey -s '^f' '$HOME/Scripts/tmux-sessionizer\n'
 
 #change cursor
 function zle-keymap-select {
@@ -92,7 +92,7 @@ eval "$(zoxide init zsh)"
 export PATH=$PATH:$HOME/Scripts/
 
 #conda shit
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+ [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 #fzf integration?
 eval "$(fzf --zsh)"

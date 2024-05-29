@@ -1,4 +1,4 @@
-vim.cmd("set expandtab")
+--vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
@@ -7,7 +7,8 @@ vim.cmd("set relativenumber")
 vim.cmd("set splitright")
 vim.cmd("set scl=yes")
 vim.g.mapleader=" "
-
+-- vim.opt.list = true
+-- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 --hilight on yank
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -17,3 +18,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank({higroup="Visual"})
   end,
 })
+
