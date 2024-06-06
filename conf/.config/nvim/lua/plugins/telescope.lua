@@ -14,7 +14,7 @@ return {
 			},
 			{ "nvim-telescope/telescope-ui-select.nvim" },
 
-			{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
+			{ "nvim-tree/nvim-web-devicons",            enabled = vim.g.have_nerd_font },
 		},
 
 		config = function()
@@ -26,9 +26,8 @@ return {
 				},
 			})
 
-      pcall(require('telescope').load_extension, 'fzf')
-      pcall(require('telescope').load_extension, 'ui-select')
-
+			pcall(require("telescope").load_extension, "fzf")
+			pcall(require("telescope").load_extension, "ui-select")
 
 			local builtin = require("telescope.builtin")
 
@@ -40,9 +39,15 @@ return {
 				"<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,-u<CR>",
 				{ noremap = true, silent = true }
 			)
+			vim.api.nvim_set_keymap(
+				"n",
+				"<leader>fd",
+				"<cmd>Telescope diagnostics bufnr=0 <CR>",
+				{ noremap = true, silent = true }
+			)
 			vim.keymap.set("n", "<leader>fw", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
-			vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
+			vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, {})
 			vim.keymap.set("n", "gI", builtin.lsp_implementations, {})
 			vim.keymap.set("n", "gr", builtin.lsp_references, {})
 		end,

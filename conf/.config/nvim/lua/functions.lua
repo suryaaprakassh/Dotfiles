@@ -6,7 +6,7 @@ end
 
 function OpenFiles()
   vim.cmd("vertical split")
-  vim.cmd("vertical resize 100")
+  vim.cmd("vertical resize 60")
   vim.cmd("wincmd l")
   vim.cmd("wincmd s")
   vim.cmd("execute 'edit' fnameescape('input.txt')")
