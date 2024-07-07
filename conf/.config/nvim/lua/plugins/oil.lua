@@ -53,7 +53,7 @@ return {
         ["g\\"] = "actions.toggle_trash",
       },
       keymaps_help = {
-        border = "rounded",
+        border = "none",
       },
       use_default_keymaps = true,
       view_options = {
@@ -71,10 +71,10 @@ return {
         },
       },
       float = {
-        padding = 2,
+        padding = 0,
         max_width = 0,
         max_height = 0,
-        border = "rounded",
+        border = "none",
         win_options = {
           winblend = 0,
         },
@@ -83,16 +83,17 @@ return {
         end,
       },
       preview = {
-        max_width = 0.9,
-        min_width = { 40, 0.4 },
-        width = nil,
-        max_height = 0.9,
-        min_height = { 5, 0.1 },
-        height = nil,
-        border = "rounded",
+				padding=2,
+        -- max_width = 0.9,
+        -- min_width = { 40, 0.4 },
+        -- width = nil,
+        -- max_height = 0.9,
+        -- min_height = { 5, 0.1 },
+        -- height = nil,
+        border = "none",
         split="right",
         win_options = {
-          winblend = 0,
+          winblend = 1,
         },
         update_on_cursor_moved = true,
       },
@@ -103,14 +104,14 @@ return {
         max_height = { 10, 0.9 },
         min_height = { 5, 0.1 },
         height = nil,
-        border = "rounded",
+        border = "none",
         minimized_border = "none",
         win_options = {
           winblend = 0,
         },
       },
       ssh = {
-        border = "rounded",
+        border = "none",
       },
     })
   end,
