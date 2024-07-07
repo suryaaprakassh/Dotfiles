@@ -2,9 +2,9 @@ return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
 	},
-  -- {
-  --   "github/copilot.vim"
-  -- },
+	-- {
+	--   "github/copilot.vim"
+	-- },
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
@@ -16,6 +16,12 @@ return {
 		"hrsh7th/nvim-cmp",
 		config = function()
 			local cmp = require("cmp")
+
+			local win_opt = {
+				col_offset = 0,
+				side_padding = 1,
+				winhighlight = "Normal:PopMenu,FloatBorder:None,CursorLine:Visual,Search:None",
+			}
 			require("luasnip.loaders.from_vscode").lazy_load()
 			cmp.setup({
 				snippet = {
@@ -24,10 +30,12 @@ return {
 						require("luasnip").lsp_expand(args.body)
 					end,
 				},
+
 				window = {
-					completion = cmp.config.window.bordered(),
-					documentation = cmp.config.window.bordered(),
+					completion = cmp.config.window.bordered(win_opt),
+					documentation = cmp.config.window.bordered(win_opt),
 				},
+
 				mapping = cmp.mapping.preset.insert({
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
