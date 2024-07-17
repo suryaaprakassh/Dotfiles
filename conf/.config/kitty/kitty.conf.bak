@@ -1,4 +1,4 @@
-font_family JetBrainsMono Nerd Font
+font_family Jetbrains Mono Nerd Font
 
 italic_font auto
 
@@ -10,7 +10,6 @@ font_size 14.0
 
 cursor_shape block
 enable_audio_bell no
-hide_window_decorations yes
 shell_integration no-title
 
 draw_minimal_borders yes
@@ -18,6 +17,6 @@ url_style curly
 shell zsh 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Dark
+# Solarized Dark
 include current-theme.conf
 # END_KITTY_THEME

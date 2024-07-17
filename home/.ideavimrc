@@ -1,1 +1,71 @@
-imap jj <Esc> 
+set visualbell
+set noerrorbells
+
+set scrolloff=10
+set linenumber
+set relativenumber
+set showmode
+set showcmd
+set clipboard+=unnamed
+
+" Search stuff
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+let mapleader = " "
+
+" 3rd party plugins
+set surround
+set highlightedyank
+set nerdtree
+
+inoremap jj <Esc> 
+
+" Tab navigation like tmux
+nnoremap <C-b>n :tabnext<CR>
+nnoremap <C-b>p :tabprev<CR>\
+
+" Pane movement
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
+
+" Popup navigation
+inoremap <C-n> <Action>(PopupMenu-selectNext)
+inoremap <C-p> <Action>(PopupMenu-selectPrev)
+
+
+" Comment lines
+map gcc <action>(CommentByLineComment)
+
+" Open NERDTree (use q to exit)
+map <leader>tt :NERDTreeToggle<CR>
+
+
+" Window splits
+map <leader>sv <Action>(SplitVertically)
+map <leader>sh <Action>(SplitHorizontally)
+"map <leader>wu <Action>(Unsplit)
+"map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+
+" Actions
+"map <leader>am <action>(ShowIntentionActions)
+map <leader>fw <action>(SearchEverywhere)
+
+
+" File navigation
+map <leader>ff <action>(GotoFile)
+map <leader>rn <Action>(RenameElement)
+
+" Go to code
+nmap gd <Action>(GotoDeclaration)
+nmap gy <Action>(GotoTypeDeclaration)
+nmap gi <Action>(GotoImplementation)
+nmap gu <Action>(ShowUsages)
+"nmap gt <Action>(GotoTest)
+"nmap gf <Action>(Back)
+"nmap gb <Action>(Forward)
+

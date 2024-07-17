@@ -4,7 +4,6 @@ alias l='ls -CF'
 alias tx='tmux -u'
 alias txn='tmux -u new -s'
 alias v="vim-opener"
-alias vi="nvim"
 alias py="python3"
 alias ..="cd .."
 alias ze="nvim $HOME/.zshrc"
