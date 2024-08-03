@@ -1,0 +1,22 @@
+[global]
+frame_color = "#8caaee"
+separator_color= frame
+font="Jetbrains Mono Nerd Font 12"
+
+[urgency_low]
+frame_color = "#1D918B"
+foreground = "#FFEE79"
+background = "#18191E"
+timeout = 5
+
+[urgency_normal]
+frame_color = "#D16BB7"
+foreground = "#FFEE79"
+background = "#18191E"
+timeout = 10
+
+[urgency_critical]
+frame_color = "#FC2929"
+foreground = "#FFFF00"
+background = "#18191E"
+timeout = 10

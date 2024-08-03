@@ -15,7 +15,7 @@ set $sup Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: RobotoMono Nerd Font 10
+font pango: Jetbrains Mono Nerd Font 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -33,7 +33,7 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -41,10 +41,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet &
 #compositor
 exec_always --no-startup-id picom 
-# wallpaper
-
-
-exec --no-startup-id /usr/bin/feh --bg-scale /home/suryaprakash/Downloads/soker.jpg
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -80,9 +76,10 @@ bindsym $sup+p exec dunstctl history-pop
 
 bindsym $sup+space exec --no-startup-id ~/.config/rofi/launchers/type-2/launcher.sh
 
-#lockscreen
-bindsym $sup+l exec i3lock -i ~/Downloads/soker_blur.png
+bindsym $sup+e exec --no-startup-id ~/.config/rofi/launchers/type-2/emoji_launcher.sh
 
+#lockscreen
+bindsym $sup+l exec betterlockscreen -l
 
 # kill focused window
 bindsym $sup+q kill
@@ -91,7 +88,7 @@ bindsym $sup+q kill
 
 # start dmenu (a program launcher)
 bindsym $sup+d exec --no-startup-id dmenu_run
-# A more modern dmenu replacement is rofi:
+# A more modern dmenu replacement is earofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
@@ -191,7 +188,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Start browser on workspace 1
 exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
 # Start terminal on workspace 2
-exec --no-startup-id i3-msg "workspace $ws2; exec wezterm"
+exec --no-startup-id i3-msg "workspace $ws2; exec kitty"
 # Start Discord on workspace 3
 exec --no-startup-id i3-msg "workspace $ws3; exec com.discordapp.Discord"
 
@@ -232,6 +229,10 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+
+# wallpaper
+exec --no-startup-id /usr/bin/feh --bg-scale /home/suryaprakash/Downloads/wallpaper.png
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
