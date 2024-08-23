@@ -12,7 +12,7 @@ scale = 0
 notification_limit = 0
 progress_bar = true
 progress_bar_height = 80
-progress_bar_frame_width = 4
+progress_bar_frame_width = 2
 progress_bar_min_width = 300
 progress_bar_max_width = 300
 indicate_hidden = yes
@@ -21,12 +21,12 @@ separator_height = 2
 padding = 15
 horizontal_padding = 15
 text_icon_padding = 0
-frame_width = 4
+frame_width = 2
 gap_size = 0
 separator_color = frame
 sort = yes
 idle_threshold = 120
-font = JetBrains Mono 10
+font = JetBrainsMono Nerd Font 10
 line_height = 2
 markup = full
 format = %s\n%b
@@ -54,18 +54,18 @@ class = Dunst
 
 [urgency_low]
 timeout = 2
-background = "#1E2128"
-foreground = "#ABB2BF"
-frame_color = "#292d37"
+background = "#1e222a"
+foreground = "#c8ccd4"
+frame_color = "#da6e89"
 
 [urgency_normal]
 timeout = 5
-background = "#1E2128"
-foreground = "#ABB2BF"
-frame_color = "#292d37"
+background = "#1e222a"
+foreground = "#c8ccd4"
+frame_color = "#da6e89"
 
 [urgency_critical]
 timeout = 0
-background = "#1E2128"
-foreground = "#E06B74"
-frame_color = "#E06B74"
+background = "#1e222a"
+foreground = "#e06c75"
+frame_color = "#e06c75"

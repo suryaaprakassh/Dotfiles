@@ -6,7 +6,7 @@
 ## GENERAL --------------------------------------------------------
 
 ## Import additional configuration files.
-import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
+import = ["~/.config/i3/alacritty/colors.toml", "~/.config/i3/alacritty/fonts.toml"]
 
 ## You can set shell.program to the path of your favorite shell, e.g. /bin/zsh.
 ## Entries in shell.args are passed as arguments to the shell.
@@ -49,8 +49,8 @@ lines = 24
 
 ## Blank space added around the window in pixels.
 [window.padding]
-x = 12
-y = 12
+x = 10
+y = 10
 
 ## SCROLLING ------------------------------------------------------
 [scrolling]
