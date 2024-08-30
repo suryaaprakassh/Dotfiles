@@ -5,6 +5,9 @@ config.color_scheme = "Solarized Dark Higher Contrast (Gogh)"
 config.font_size = 14.0
 config.audible_bell = "Disabled"
 config.line_height = 1.0
+
+config.enable_tab_bar=false
+
 config.font = wezterm.font({
 	family = "JetBrainsMono Nerd Font",
 	weight = "Bold",
