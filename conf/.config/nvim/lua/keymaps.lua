@@ -26,7 +26,7 @@ vim.keymap.set("i", "<C-j>", "<Down>", {})
 vim.keymap.set("n", "<Esc>", ":nohl<CR>", {})
 
 --other remaps
-vim.keymap.set("n", "<C-f>", ":silent !tmux neww tmux-sessionizer<CR>", {})
+vim.keymap.set("n", "<C-f>", ":silent !tmux neww session.sh<CR>", {})
 
 --splits
 vim.keymap.set("n", "<leader>sv", "<C-w>v", {})
@@ -38,3 +38,8 @@ vim.keymap.set("n", "<Tab>", ":tabnext<CR>", {})
 vim.keymap.set("n", "<S-Tab>", ":tabprev<CR>", {})
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", {})
 vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", {})
+
+--quick fix list
+vim.keymap.set("n", "<leader>co", ":copen<CR>", {})
+vim.keymap.set("n", "c]", ":cnext<CR>", {})
+vim.keymap.set("n", "c[", ":cprev<CR>", {})
