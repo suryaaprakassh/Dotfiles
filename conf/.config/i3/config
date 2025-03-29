@@ -25,8 +25,6 @@ font pango: Jetbrains Mono Nerd Font 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-#i3
-exec --no-startup-id /usr/lib/gsd-xsettings
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -64,7 +62,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $sup+Return exec kitty
+bindsym $sup+Return exec wezterm 
 
 #start browser 
 bindsym $sup+b exec firefox 
@@ -184,11 +182,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
 #autostart apps
+exec --no-startup-id /usr/lib/gsd-xsettings
 
 # Start browser on workspace 1
 exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
 # Start terminal on workspace 2
-exec --no-startup-id i3-msg "workspace $ws2; exec kitty"
+exec --no-startup-id i3-msg "workspace $ws2; exec wezterm"
 # Start Discord on workspace 3
 exec --no-startup-id i3-msg "workspace $ws3; exec com.discordapp.Discord"
 
