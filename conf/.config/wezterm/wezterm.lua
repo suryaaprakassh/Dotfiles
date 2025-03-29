@@ -1,16 +1,15 @@
 local wezterm = require("wezterm")
 local config = {}
 
-config.color_scheme = "Solarized Dark Higher Contrast (Gogh)"
 config.font_size = 14.0
 config.audible_bell = "Disabled"
-config.line_height = 1.0
+config.line_height=1.3
 
 config.enable_tab_bar=false
-
+config.colors = require("cyberdream")
 config.font = wezterm.font({
-	family = "JetBrainsMono Nerd Font",
-	weight = "Bold",
+	family = "JetBrains Mono",
+	weight="Medium",
 	harfbuzz_features = {
 		"ss01",
 		"ss02",
@@ -26,5 +25,4 @@ config.font = wezterm.font({
 		"liga",
 	},
 })
-config.term = "xterm-256color"
 return config
