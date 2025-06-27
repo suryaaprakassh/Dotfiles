@@ -19,6 +19,9 @@ return {
 
 		config = function()
 			require("telescope").setup({
+				defaults = {
+					border=false,
+				},
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown(),
